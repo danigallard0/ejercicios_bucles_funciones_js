@@ -15,12 +15,12 @@ function findMutantByPower(bichos, poder) {
   const encontrado = []
 
   for (const bicho of bichos) {
-    if (bicho.poder === poder) {
+    if (bicho.power === poder) {
       encontrado.push(bicho.name)
     }
   }
   if (encontrado.length > 0) {
-    return 'Mutantes con el poder ' + poder + encontrado.join(', ')
+    return 'Mutantes con el poder ' + poder + ': ' + encontrado.join(', ')
   } else {
     return 'No hay mutantes con el poder ' + poder
   }
